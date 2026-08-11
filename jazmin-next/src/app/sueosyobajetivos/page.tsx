@@ -1,34 +1,3 @@
-export default function SuenosYObjetivosPage() {
-  return (
-    <main id="contenido">
-      <section className="page-hero" style={{ backgroundImage: "url('https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-6181ee66-6b96-4c54-bf2a-a1a760965f12.jpg?w=2074&e=webp')" }}>
-        <div className="page-hero-overlay" />
-        <div className="container page-hero-content">
-          <p className="eyebrow">Fundacion Jazmin</p>
-          <h1>Suenos y Objetivos</h1>
-        </div>
-      </section>
-
-      <section className="section section-light">
-        <div className="container two-col">
-          <article className="text-card">
-            <h2>Nuestros Suenos</h2>
-            <ul>
-              <li>Espacios de juegos para todos los ninos en todos los barrios.</li>
-              <li>Ninos riendo, disfrutando e interactuando en el espacio publico.</li>
-              <li>Una sociedad solidaria que cuide los espacios de todos.</li>
-            </ul>
-          </article>
-          <article className="text-card">
-            <h2>Nuestros Objetivos</h2>
-            <ul>
-              <li>Promover la inclusion de los ninos con distintas capacidades.</li>
-              <li>Estimular el analisis y la discusion sobre accesibilidad.</li>
-              <li>Impulsar alianzas para ejecutar proyectos en todo el pais.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-    </main>
-  );
-}
+import { DonateBand,images,PageHero } from "@/components/PageParts";
+const goals=["Promover la inclusión de los niños, considerando sus distintas capacidades, a través de la mejora y adaptación del espacio público.","Estimular el análisis y la discusión de la temática.","Seleccionar espacios para crear o reformular áreas de juego, analizando costos, mantenimiento, entorno, accesibilidad y seguridad.","Vincular organizaciones públicas y privadas, personas físicas o jurídicas, nacionales o extranjeras.","Impulsar cambios que mejoren la legislación vigente en materia de accesibilidad e inclusión.","Financiar propuestas mediante fondos recaudados por diferentes canales.","Detectar espacios de oportunidad para la aplicación de los objetivos.","Difundir la experiencia y los logros para darles continuidad y convertir el modelo en ejemplo.","Evaluar el uso, mantenimiento y aceptación de los espacios y su equipamiento."];
+export default function Page(){return <main id="contenido"><PageHero eyebrow="El futuro que buscamos" title="Sueños y objetivos" image={images.children}/><section className="section"><div className="container content-grid"><h2>Nuestros sueños</h2><article className="prose"><p className="large-text">Nos imaginamos espacios de juegos para todos los niños en todos los barrios. Niños riendo, disfrutando, jugando e interactuando en todos los espacios públicos de nuestra ciudad.</p><p>Nos imaginamos espacios donde los padres puedan llevar a sus hijos a realizar las rehabilitaciones que necesiten, jugando, cerca de su casa y sin complejidades de traslado.</p><p>Nos imaginamos equipamientos inclusivos que no requieran mucho mantenimiento, en espacios protegidos y seguros.</p><p>Nos imaginamos una sociedad aprendiendo a vivir de forma solidaria, cuidando los espacios públicos.</p><p>Nos imaginamos una ciudad mejor. Nos imaginamos un mundo mejor.</p></article></div></section><section className="section intro-section"><div className="container"><p className="eyebrow">Nuestros objetivos</p><ol className="numbered-list">{goals.map(g=><li key={g}>{g}</li>)}</ol><p className="large-text">Buscamos superarnos como sociedad, transformando la vivencia de los espacios públicos y aprendiendo junto a nuestros niños sobre la importancia de la inclusión e integración en nuestra comunidad.</p></div></section><DonateBand/></main>}

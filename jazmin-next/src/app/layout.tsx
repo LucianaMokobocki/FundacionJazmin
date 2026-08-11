@@ -1,34 +1,18 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Manrope } from "next/font/google";
+import { DM_Sans, Lora } from "next/font/google";
 import SiteShell from "@/components/SiteShell";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
-});
-
-const dmSerif = DM_Serif_Display({
-  variable: "--font-dm-serif",
-  weight: "400",
-  subsets: ["latin"],
-});
+const sans = DM_Sans({ variable: "--font-sans", subsets: ["latin"] });
+const serif = Lora({ variable: "--font-serif", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fundacion Jazmin",
-  description: "Sitio oficial de Fundacion Jazmin en Next.js",
+  metadataBase: new URL("https://www.fundacionjazmin.org"),
+  title: { default: "Fundación Jazmín | Jugar es un derecho", template: "%s | Fundación Jazmín" },
+  description: "Fundación uruguaya que promueve espacios públicos inclusivos y accesibles para que todos los niños puedan jugar.",
+  openGraph: { title: "Fundación Jazmín", description: "Juntos podemos cambiar el mundo jugando.", locale: "es_UY", type: "website" },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="es" className={`${manrope.variable} ${dmSerif.variable}`}>
-      <body>
-        <SiteShell>{children}</SiteShell>
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="es" className={`${sans.variable} ${serif.variable}`}><body><SiteShell>{children}</SiteShell></body></html>;
 }

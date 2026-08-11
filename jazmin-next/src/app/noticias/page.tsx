@@ -1,30 +1,5 @@
-const news = [
-  ["Jardin Botanico - Canal 10", "https://www.canal10.com.uy/jardin-botanico-espacio-juegos-inclusivo-n919366"],
-  ["Diario El Pais", "https://www.elpais.com.uy/bienestar/vida-sana/nueva-plaza-infantil-accesible-e-inclusiva-en-el-jardin-botanico-de-montevideo?_amp=true"],
-  ["Radio Sarandi", "https://www.sarandi690.com.uy/2023/06/26/un-proyecto-fruto-del-amor-fundacion-jazmin-lucha-por-inaugurar-mas-espacios-de-juegos-inclusivos-en-uruguay/"],
-  ["Subrayado", "https://www.subrayado.com.uy/un-padre-cumplio-su-sueno-inauguro-una-plaza-su-hija-jazmin-n71266"],
+import type { Metadata } from "next";import { images,PageHero } from "@/components/PageParts";export const metadata:Metadata={title:"Noticias"};
+const news=[
+["Jardín Botánico","Diario El País","https://www.elpais.com.uy/bienestar/vida-sana/nueva-plaza-infantil-accesible-e-inclusiva-en-el-jardin-botanico-de-montevideo?_amp=true"],["Jardín Botánico","Radio Sarandí","https://www.sarandi690.com.uy/2023/06/26/un-proyecto-fruto-del-amor-fundacion-jazmin-lucha-por-inaugurar-mas-espacios-de-juegos-inclusivos-en-uruguay/"],["Jardín Botánico","IMM","https://montevideo.gub.uy/noticias/cultura/obras-en-el-area-de-juegos-del-jardin-botanico"],["Plaza Portugal","InfoCasas","https://www.infocasas.com.uy/blog/un-pais-inclusivo"],["Plaza Villa Biarritz","Del Sol FM","https://www.delsol.uy/notoquennada/entrevistas/una-historia-de-orcas-e-integracion"],["Plaza Portugal","El Observador","https://www.elobservador.com.uy/nota/un-espacio-para-todos-los-vecinos-2017109500"],["Plaza Portugal","Subrayado","https://www.subrayado.com.uy/un-padre-cumplio-su-sueno-inauguro-una-plaza-su-hija-jazmin-n71266"],["Plaza Portugal","El País","https://www.elpais.com.uy/informacion/sueno-cumplido-padre-inauguro-plaza-hija-jazmin.html"],["Espacios públicos integradores","IMM","https://montevideo.gub.uy/institucional/noticias/convenio-para-espacios-publicos-integradores"],["Fundación Jazmín","180","https://www.180.com.uy/articulo/63509_fundacion-jazmin-trabajara-con-im-y-udelar-para-impulsar-espacios-inclusivos"],["Una plaza para todos","Arqa","https://arqa.com/agenda/concursos/lanzamiento-una-plaza-para-todos-concurso-de-ideas-para-la-plaza-portugal.html"],["Espacios de juegos inclusivos","Canal 10","https://www.canal10.com.uy/espacios-juegos-inclusivos-y-accesibles-n889984"],["Plaza Portugal","Negocios y Tendencias","https://www.montevideo.com.uy/Negocios-y-Tendencias/Fundacion-Jazmin-inaugura-espacio-publico-de-juegos-infantiles-inclusivos-uc663671"],["Concurso Plaza Portugal","En Perspectiva","http://enperspectiva.uy/wp-content/uploads/2015/12/PREMIADOS-PlazaPortugal-FundacionJazmin.pdf"],["Convenio Fundación Jazmín","FADU","http://www.fadu.edu.uy/convenios/files/2012/03/Facultad-de-Arquitectura-IM-Fundacion-Jazmin.pdf"],
 ] as const;
-
-export default function NoticiasPage() {
-  return (
-    <main id="contenido">
-      <section className="page-hero" style={{ backgroundImage: "url('https://i-p.rmcdn.net/62bf0f610714b800281263af/3801592/upload-8118ac2e-5029-4354-b56c-5349dcf8df05.jpg?w=2506&e=webp')" }}>
-        <div className="page-hero-overlay" />
-        <div className="container page-hero-content">
-          <p className="eyebrow">Fundacion Jazmin</p>
-          <h1>Noticias</h1>
-        </div>
-      </section>
-
-      <section className="section section-light">
-        <div className="container news-grid">
-          {news.map(([title, href]) => (
-            <a key={title} className="news-card" href={href} target="_blank" rel="noreferrer">
-              <h3>{title}</h3>
-            </a>
-          ))}
-        </div>
-      </section>
-    </main>
-  );
-}
+export default function Page(){return <main id="contenido"><PageHero eyebrow="Prensa y novedades" title="Noticias" text="La inclusión también crece cuando se comparte." image={images.contact}/><section className="section"><div className="container news-list">{news.map(([title,media,href])=><a className="news-card" key={`${title}${media}`} href={href} target="_blank" rel="noreferrer"><span>{media}</span><h2>{title}</h2><b>Leer noticia ↗</b></a>)}</div></section></main>}

@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function sitemap():MetadataRoute.Sitemap{const routes=["","sobrenosotros","nuestrospilares","proyectos","sueosyobajetivos","plazaportugal","plazajardinbotanico","conciertoabeneficio","vazquezledesma","plazaituzaingo","hamacasinclusivasentodouruguay","noticias","mapajazmin","donaciones","contacto"];return routes.map(route=>({url:`https://www.fundacionjazmin.org/${route}`,lastModified:new Date(),changeFrequency:route===""?"monthly":"yearly",priority:route===""?1:.7}))}

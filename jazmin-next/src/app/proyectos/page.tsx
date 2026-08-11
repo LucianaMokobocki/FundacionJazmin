@@ -1,30 +1,8 @@
-const projects = [
-  ["Plaza Ituzaingo", "Montevideo", "https://www.fundacionjazmin.org/plazaituzaingo/"],
-  ["Jardin Botanico", "Montevideo", "https://www.fundacionjazmin.org/plazajardinbotanico/"],
-  ["Plaza Portugal", "Montevideo", "https://www.fundacionjazmin.org/plazaportugal/"],
+import type { Metadata } from "next";import Link from "next/link";import { DonateBand, images, PageHero } from "@/components/PageParts";
+/* eslint-disable @next/next/no-img-element -- Se conservan fotografías remotas originales de Fundación Jazmín. */
+export const metadata:Metadata={title:"Proyectos"};
+const projects=[
+["Plaza Ituzaingó","Montevideo","/plazaituzaingo",images.play],["Jardín Botánico","Montevideo","/plazajardinbotanico",images.children],["Plaza Portugal","Montevideo","/plazaportugal",images.family],["Plaza Vázquez Ledesma","Montevideo","/vazquezledesma",images.event],["Concierto a beneficio","Hospital Pereira Rossell","/conciertoabeneficio",images.contact],["Hamacas inclusivas","Todo Uruguay","/hamacasinclusivasentodouruguay",images.pillars],
 ] as const;
-
-export default function ProyectosPage() {
-  return (
-    <main id="contenido">
-      <section className="page-hero" style={{ backgroundImage: "url('https://i-p.rmcdn.net/62bf0f610714b800281263af/3801592/upload-8118ac2e-5029-4354-b56c-5349dcf8df05.jpg?w=2506&e=webp')" }}>
-        <div className="page-hero-overlay" />
-        <div className="container page-hero-content">
-          <p className="eyebrow">Nuestro Trabajo</p>
-          <h1>Proyectos</h1>
-        </div>
-      </section>
-
-      <section className="section section-light">
-        <div className="container projects-grid">
-          {projects.map(([title, city, href]) => (
-            <a key={title} className="project-card" href={href} target="_blank" rel="noreferrer">
-              <h3>{title}</h3>
-              <p>{city}</p>
-            </a>
-          ))}
-        </div>
-      </section>
-    </main>
-  );
-}
+const more=["Escuela Especial N.º 79 · Maldonado","Escuela Especial N.º 59 · Río Negro","Plaza República Argentina · Montevideo","Jardín Teeny Tiny · Montevideo","Plaza Juan A. Silva · Montevideo"];
+export default function Page(){return <main id="contenido"><PageHero eyebrow="Nuestro trabajo" title="Proyectos que cambian la forma de jugar." text="Espacios públicos accesibles, seguros e inclusivos." image={images.event}/><section className="section"><div className="container"><div className="project-list">{projects.map(([t,l,h,i])=><Link href={h} key={t}><img src={i} alt=""/><div><p>{l}</p><h2>{t}</h2><span>Conocer proyecto →</span></div></Link>)}</div></div></section><section className="section intro-section"><div className="container content-grid"><h2>Más intervenciones</h2><ul className="numbered-list">{more.map(x=><li key={x}>{x}</li>)}</ul></div></section><DonateBand/></main>}

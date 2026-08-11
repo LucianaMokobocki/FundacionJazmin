@@ -1,39 +1,4 @@
-export default function SobreNosotrosPage() {
-  return (
-    <main id="contenido">
-      <section
-        className="page-hero"
-        style={{
-          backgroundImage:
-            "url('https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-9af7586b-f60d-448d-8431-ab7babb5bcd5.jpg?w=2050&e=webp&cX=0&cY=1295&cW=3997&cH=1735')",
-        }}
-      >
-        <div className="page-hero-overlay" />
-        <div className="container page-hero-content">
-          <p className="eyebrow">Fundacion Jazmin</p>
-          <h1>Sobre Nosotros</h1>
-        </div>
-      </section>
-
-      <section className="section section-light">
-        <div className="container">
-          <div className="section-head">
-            <h2>Quienes somos</h2>
-            <p className="lead">
-              Fundacion Jazmin fue creada por los padres de Jazmin Kopel, Nadia Dib y Fabian Kopel,
-              como un regalo a la sociedad en nombre de su hija.
-            </p>
-          </div>
-          <div className="photo-row">
-            <figure className="photo-card">
-              <img src="https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-9af7586b-f60d-448d-8431-ab7babb5bcd5.jpg?w=1600&e=webp" alt="Familia Fundacion Jazmin" />
-            </figure>
-            <figure className="photo-card">
-              <img src="https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-1ffe4db8-9fa2-4595-a3bb-147efa4661e0.jpg?w=1600&e=webp" alt="Ninos jugando" />
-            </figure>
-          </div>
-        </div>
-      </section>
-    </main>
-  );
-}
+import type { Metadata } from "next";
+import { DonateBand, images, PageHero, SectionTitle, Video } from "@/components/PageParts";
+export const metadata:Metadata={title:"Quiénes somos"};
+export default function Page(){return <main id="contenido"><PageHero eyebrow="Nuestra historia" title="La luz y la alegría de Jazmín." text="Una fundación nacida como un regalo a la sociedad." image={images.family}/><section className="section"><div className="container content-grid"><aside><p className="eyebrow">Quiénes somos</p><p>Fundación Jazmín<br/>Uruguay · desde 2015</p></aside><article className="prose"><p className="large-text">Fundación Jazmín fue creada por los padres de Jazmín Kopel, Nadia Dib y Fabián Kopel, como un regalo a la sociedad en nombre de su hija y de todas las personas que la ayudaron y ayudan cada día.</p><p>Enfermeras, doctores, kinesiólogas, psicomotricistas, terapistas ocupacionales y, por supuesto, abuelos, tíos, primos, amigos y tantas personas queridas más.</p><p>Jazmín hoy tiene 15 años y desde que nació se vio comprometido su desarrollo físico e intelectual, no así su capacidad de amar y ser amada.</p><p>La Fundación Jazmín tiene como inspiración la luz y la alegría que Jazmín transmite cada día. Es su fuerza la que nos impulsa a ver la vida con generosidad y agradecimiento, a seguir adelante a pesar de cualquier obstáculo y a confiar en que todo es posible, incluso un mundo mejor.</p><Video id="KUMnoRaSras" title="Historia de Fundación Jazmín"/></article></div></section><section className="section intro-section"><div className="container"><SectionTitle eyebrow="Nuestros sueños" title="Nos imaginamos una ciudad mejor. Nos imaginamos un mundo mejor."/><ul className="numbered-list"><li>Espacios de juegos para todos los niños en todos los barrios.</li><li>Niños riendo, disfrutando, jugando e interactuando en todos los espacios públicos de nuestra ciudad.</li><li>Espacios donde los padres puedan llevar a sus hijos a realizar las rehabilitaciones que necesiten, jugando, cerca de su casa y sin complejidades de traslado.</li><li>Equipamientos inclusivos que no requieran mucho mantenimiento, en espacios protegidos y seguros.</li><li>Una sociedad aprendiendo a vivir de forma solidaria, cuidando los espacios públicos.</li></ul></div></section><DonateBand/></main>}

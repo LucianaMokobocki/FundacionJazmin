@@ -1,21 +1,2 @@
-export default function MapaJazminPage() {
-  return (
-    <main id="contenido">
-      <section className="page-hero" style={{ backgroundImage: "url('https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-3b221efc-069b-44c3-a0f4-864d413340c5.png?e=webp&nll=true')" }}>
-        <div className="page-hero-overlay" />
-        <div className="container page-hero-content">
-          <p className="eyebrow">Fundacion Jazmin</p>
-          <h1>Mapa Jazmin</h1>
-        </div>
-      </section>
-
-      <section className="section section-light">
-        <div className="container">
-          <figure className="map-wrap">
-            <img src="https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-3b221efc-069b-44c3-a0f4-864d413340c5.png?e=webp&nll=true" alt="Mapa Jazmin" />
-          </figure>
-        </div>
-      </section>
-    </main>
-  );
-}
+import type { Metadata } from "next";import { images,PageHero } from "@/components/PageParts";export const metadata:Metadata={title:"Mapa Jazmín"};
+export default function Page(){return <main id="contenido"><PageHero eyebrow="Espacios inclusivos" title="Mapa Jazmín" text="Encontrá proyectos y hamacas inclusivas en Uruguay." image={images.event}/><section className="section"><div className="container"><iframe className="map-embed" src="https://www.google.com/maps/d/u/0/embed?mid=1JwDjqIUl8SmUsA_IYPt-7OqAEsKyaZY&ehbc=2E312F" title="Mapa de intervenciones de Fundación Jazmín" loading="lazy"/><div className="content-grid"><h2>Ubicaciones destacadas</h2><ul className="numbered-list"><li>Plaza Portugal · La Blanqueada, Montevideo</li><li>Jardín Botánico · Montevideo</li><li>Plaza Ituzaingó · Montevideo</li><li>Escuela Especial N.º 79 · Maldonado</li><li>Escuela Especial N.º 59 · Río Negro</li><li>Hamacas inclusivas · 19 departamentos</li></ul></div></div></section></main>}
