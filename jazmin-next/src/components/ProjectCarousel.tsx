@@ -16,6 +16,7 @@ const AUTOPLAY_DELAY = 2000;
 
 export default function ProjectCarousel({ projects }: { projects: readonly ProjectSlide[] }) {
   const [active, setActive] = useState(0);
+  const [paused, setPaused] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
   const touchStart = useRef<number | null>(null);
 
@@ -34,10 +35,10 @@ export default function ProjectCarousel({ projects }: { projects: readonly Proje
   }, []);
 
   useEffect(() => {
-    if (reducedMotion) return;
+    if (reducedMotion || paused) return;
     const timer = window.setInterval(next, AUTOPLAY_DELAY);
     return () => window.clearInterval(timer);
-  }, [next, reducedMotion]);
+  }, [next, paused, reducedMotion]);
 
   const positionFor = (index: number) => {
     let distance = index - active;
@@ -82,19 +83,30 @@ export default function ProjectCarousel({ projects }: { projects: readonly Proje
       {projects.map((project, index) => {
         const position = positionFor(index);
         const isActive = index === active;
-        const picture = <>
-          <img src={project.image} alt={isActive ? `${project.title}, ${project.location}` : ""} />
-          <span className="project-card-shade" />
-        </>;
+        const isExternal = project.href?.startsWith("http");
         return <article
           key={`${project.title}-${index}`}
           className={`project-runway-card ${position}`}
           aria-hidden={!isActive}
           onClick={() => !isActive && select(index)}
+          onMouseEnter={() => isActive && setPaused(true)}
+          onMouseLeave={() => isActive && setPaused(false)}
+          onFocusCapture={() => isActive && setPaused(true)}
+          onBlurCapture={(event) => {
+            if (isActive && !event.currentTarget.contains(event.relatedTarget)) setPaused(false);
+          }}
         >
-          {isActive && project.href
-            ? <Link href={project.href} aria-label={`Conocer el proyecto ${project.title}`}>{picture}</Link>
-            : <button type="button" tabIndex={isActive ? 0 : -1} onClick={() => select(index)} aria-label={`Mostrar ${project.title}`}>{picture}</button>}
+          <button type="button" tabIndex={isActive && !project.href ? 0 : -1} onClick={() => select(index)} aria-label={`Mostrar ${project.title}`}>
+            <img src={project.image} alt={isActive ? `${project.title}, ${project.location}` : ""} />
+            <span className="project-card-shade" />
+          </button>
+          {isActive && project.href && (isExternal
+            ? <a className="project-card-action" href={project.href} target="_blank" rel="noreferrer" aria-label={`Conocer el proyecto ${project.title} en Instagram`}>
+              <span>Conocer proyecto</span><span aria-hidden="true">↗</span>
+            </a>
+            : <Link className="project-card-action" href={project.href} aria-label={`Conocer el proyecto ${project.title}`}>
+              <span>Conocer proyecto</span><span aria-hidden="true">→</span>
+            </Link>)}
         </article>;
       })}
 
@@ -105,7 +117,6 @@ export default function ProjectCarousel({ projects }: { projects: readonly Proje
     <div className="project-runway-info" aria-live="polite" aria-atomic="true">
       <p>{activeProject.location}</p>
       <h2>{activeProject.title}</h2>
-      {activeProject.href && <Link href={activeProject.href}>Conocer proyecto <span aria-hidden="true">→</span></Link>}
     </div>
 
     <div className="project-dots" aria-label="Elegir proyecto">
