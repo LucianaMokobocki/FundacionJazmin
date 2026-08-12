@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export const images = {
   family: "https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-9af7586b-f60d-448d-8431-ab7babb5bcd5.jpg?w=2000&e=webp",
@@ -32,8 +31,4 @@ export function SectionTitle({ eyebrow, title, intro }: { eyebrow?: string; titl
 
 export function Video({ id, title }: { id: string; title: string }) {
   return <div className="video-wrap"><iframe src={`https://www.youtube.com/embed/${id}`} title={title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>;
-}
-
-export function DonateBand() {
-  return <section className="donate-band"><div className="container donate-band-inner"><div><p className="eyebrow light">Sé parte</p><h2>Tu ayuda abre nuevos espacios para jugar.</h2></div><Link className="button white" href="/donaciones">Quiero ayudar <span aria-hidden="true">→</span></Link></div></section>;
 }

@@ -1,6 +1,6 @@
 import Link from "next/link";
 /* eslint-disable @next/next/no-img-element -- Se conservan fotografías remotas originales de Fundación Jazmín. */
-import { DonateBand, images, SectionTitle, Video } from "@/components/PageParts";
+import { images, SectionTitle, Video } from "@/components/PageParts";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import MapaUruguay from "@/components/MapaUruguay";
 
@@ -32,6 +32,6 @@ export default function Home() {
     <section className="section campaign-section"><div className="container split-feature"><div className="campaign-copy"><p className="eyebrow light">Campaña nacional</p><h2>Hamacas inclusivas en todo Uruguay</h2><p>Durante 2022 y 2023 se llevó adelante esta campaña con el apoyo del Ministerio de Desarrollo Social y de las 19 intendencias. Su objetivo: llevar una hamaca inclusiva a cada departamento.</p><Link className="button white" href="/hamacasinclusivasentodouruguay">Conocé la campaña →</Link></div><div className="campaign-visual"><Video id="fz61OP80s2A" title="Hamacas inclusivas en todo Uruguay"/></div></div></section>
 
     <section className="section map-preview"><div className="container map-grid"><div className="map-copy"><SectionTitle eyebrow="En todo el país" title="Encontrá un espacio inclusivo cerca tuyo."/><Link className="button primary" href="/mapajazmin">Abrir Mapa Jazmín <span aria-hidden="true">→</span></Link></div><MapaUruguay/></div></section>
-    <DonateBand/>
+    
   </main>;
 }

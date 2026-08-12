@@ -71,10 +71,10 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
     {children}
     <footer className="site-footer">
       <div className="container footer-grid">
-        <div className="footer-intro"><img src="https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-24e5ebf5-f2c4-4b52-930e-770bb456d835.png?w=300&e=webp&nll=true" alt="Fundación Jazmín" /><p>Juntos podemos cambiar el mundo jugando.</p></div>
+        <div className="footer-intro"><img src="https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-24e5ebf5-f2c4-4b52-930e-770bb456d835.png?w=300&e=webp&nll=true" alt="Fundación Jazmín" /><p>Tu ayuda abre nuevos espacios para jugar.</p></div>
         <div><h2>Explorá</h2>{links.map(([href,label]) => <Link key={href} href={href}>{label}</Link>)}<Link href="/mapajazmin">Mapa Jazmín</Link></div>
         <div><h2>Contacto</h2><a href="mailto:info@fundacionjazmin.org">info@fundacionjazmin.org</a><a href="tel:+59891624386">091 624 386</a><a href="https://api.whatsapp.com/send?phone=59899251414" target="_blank" rel="noreferrer">WhatsApp 099 25 14 14</a></div>
-        <div><h2>Seguinos</h2><div className="social-links">{socials.map(([href,label,icon]) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}>{icon}</a>)}</div><Link className="footer-donate" href="/donaciones">Hacer una donación</Link></div>
+        <div><h2>Seguinos</h2><div className="social-links">{socials.map(([href,label,icon]) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}>{icon}</a>)}</div><Link className="footer-donate" href="/donaciones">Quiero ayudar <span aria-hidden="true">→</span></Link></div>
       </div>
       <div className="container footer-bottom"><span>Fundación Jazmín · Uruguay</span><span>Inclusión, accesibilidad y juego</span></div>
     </footer>

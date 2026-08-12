@@ -1,4 +1,4 @@
-import { DEPARTAMENTOS, LUGARES, MAPA_ALTO, MAPA_VIEWBOX } from "./mapaUruguay";
+import { DEPARTAMENTOS, LUGARES, MAPA_ALTO, MAPA_VIEWBOX } from "./uruguayGeo";
 
 // Departamentos donde Fundación Jazmín tiene espacios inclusivos.
 const DESTACADOS = ["Montevideo", "Maldonado", "Río Negro", "Artigas"];
