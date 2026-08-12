@@ -593,3 +593,19 @@ html,body,body *,body *::before,body *::after{cursor:auto}a,button,[role="button
 .project-runway-card a.project-card-action:hover,.project-runway-card a.project-card-action:focus-visible{background:var(--pink);color:#fff;outline:3px solid #fff;outline-offset:3px}
 @media(hover:none){.project-runway-card.is-center .project-card-shade{background:linear-gradient(transparent 58%,rgba(47,31,41,.44))}.project-runway-card.is-center a.project-card-action{top:auto;bottom:1.25rem;opacity:1;pointer-events:auto;transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.project-runway-card.is-center .project-card-shade,.project-runway-card.is-center img,.project-runway-card a.project-card-action{transition:none}}
+
+/* Todas las portadas internas miden lo mismo: alto fijo, no mínimo, para
+   que al cambiar de página el bloque no salte. El contenido se centra. */
+.page-hero{height:clamp(600px,74svh,760px);min-height:0}
+.page-hero-inner{
+  padding-top:clamp(5rem,8vw,7rem);
+  padding-bottom:clamp(2.5rem,4vw,3.5rem);
+}
+@media(max-width:900px){
+  .page-hero{height:clamp(560px,70svh,660px)}
+  .page-hero-inner{padding-top:clamp(4.5rem,12vw,6rem);padding-bottom:2.5rem}
+}
+@media(max-width:600px){
+  .page-hero{height:clamp(520px,68svh,600px)}
+  .page-hero-inner{padding-top:4.5rem;padding-bottom:2.25rem}
+}
