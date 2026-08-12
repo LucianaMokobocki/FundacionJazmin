@@ -21,7 +21,7 @@ const projects = [
 
 export default function Page() {
   return <main id="contenido">
-    <PageHero eyebrow="Nuestro trabajo" title="Proyectos que cambian la forma de jugar." text="Espacios públicos accesibles, seguros e inclusivos." image={images.event} />
+    <PageHero eyebrow="Nuestro trabajo" title="Proyectos que cambian la forma de jugar." text="Espacios públicos accesibles, seguros e inclusivos." image={images.flores} />
     <section className="section">
       <div className="container">
         <ProjectCarousel projects={projects} />

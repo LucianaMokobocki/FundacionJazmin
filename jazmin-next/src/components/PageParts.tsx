@@ -1,4 +1,3 @@
-import CieloGlobos from "./CieloGlobos";
 export const images = {
   family: "https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-9af7586b-f60d-448d-8431-ab7babb5bcd5.jpg?w=2000&e=webp",
   children: "https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-1ffe4db8-9fa2-4595-a3bb-147efa4661e0.jpg?w=2000&e=webp",
@@ -21,10 +20,14 @@ export const images = {
   hamacas: "https://i-p.rmcdn.net/62bf0f610714b800281263af/4579695/image-2dc0d1f2-bb0f-445e-bf9d-ca45807995e4.jpg?w=2000&e=webp",
   // Ilustración propia para la portada de "Qué hacemos".
   aviones: "/aviones-de-papel.jpg",
+  globos: "/globos-cielo.jpg",
+  flores: "/flores-jazmin.jpg",
+  molinetes: "/molinetes.jpg",
+  burbujas: "/burbujas.jpg",
 };
 
-export function PageHero({ eyebrow, title, text, image = images.children, cielo = false }: { eyebrow: string; title: string; text?: string; image?: string; cielo?: boolean }) {
-  return <section className={cielo ? "page-hero page-hero-cielo" : "page-hero"} style={cielo ? undefined : { backgroundImage: `url('${image}')` }}>{cielo && <CieloGlobos/>}<div className="page-hero-shade"/><div className="container page-hero-inner"><p className="eyebrow light">{eyebrow}</p><h1>{title}</h1>{text && <p className="hero-lead">{text}</p>}</div></section>;
+export function PageHero({ eyebrow, title, text, image = images.children }: { eyebrow: string; title: string; text?: string; image?: string }) {
+  return <section className="page-hero" style={{ backgroundImage: `url('${image}')` }}><div className="page-hero-shade"/><div className="container page-hero-inner"><p className="eyebrow light">{eyebrow}</p><h1>{title}</h1>{text && <p className="hero-lead">{text}</p>}</div></section>;
 }
 
 export function SectionTitle({ eyebrow, title, intro }: { eyebrow?: string; title: string; intro?: string }) {
