@@ -7,8 +7,8 @@
 .photo-statement{width:min(1380px,calc(100% - 48px));margin:0 auto;height:min(68vw,720px);border-radius:80px 0 80px 0}.statement-card{right:0;bottom:0;border-radius:64px 0 0 0;padding:clamp(2rem,4vw,4rem)}
 .impact-section{background:var(--cream);padding-top:0}.impact-frame{background:var(--green);color:#fff;border-radius:80px;padding:clamp(3rem,7vw,7rem)}.impact-heading{display:grid;grid-template-columns:1fr auto;align-items:end;gap:3rem}.impact-heading .section-title>p:last-child{color:#d6e2de}.impact-heading .button{border-color:#fff}.stats-grid{background:transparent;gap:1rem;margin:5rem 0 0}.stats-grid article{position:relative;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.18);padding:2.2rem;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;border-radius:999px 999px 24px 24px}.stats-grid article>span{position:absolute;top:2rem;left:50%;transform:translateX(-50%);font-size:.68rem;letter-spacing:.18em;color:#fff9}.stats-grid strong{color:#ffc8df;font-size:clamp(3rem,5vw,5.5rem)}.stats-grid p{color:#fff;margin-bottom:0}
 .projects-section{overflow:hidden}.project-cards{grid-template-columns:repeat(12,1fr);grid-template-rows:90px 270px 80px 280px;gap:1.25rem}.project-feature:first-child{grid-column:1/8;grid-row:1/4;border-radius:0 80px 0 0}.project-feature.feature-2{grid-column:8/13;grid-row:2/4;border-radius:80px 80px 0 0}.project-feature.feature-3{grid-column:3/9;grid-row:4/5;margin-top:-25px;z-index:3;border:12px solid #fff}.project-feature>div{left:clamp(1.3rem,3vw,2.5rem);bottom:clamp(1.2rem,2.5vw,2rem)}
-.campaign-section{padding:clamp(7rem,11vw,11rem) 0}.campaign-copy{position:relative;z-index:2}.campaign-visual{position:relative;padding:0 0 90px 70px}.campaign-visual .video-wrap{position:relative;z-index:2;border-radius:80px 0 0 0;overflow:hidden}.campaign-visual>img{position:absolute;left:0;bottom:0;width:38%;aspect-ratio:4/5;object-fit:cover;z-index:3;border:10px solid var(--green);border-left:0}.campaign-visual:after{content:"19 departamentos";position:absolute;right:-2rem;bottom:2rem;text-transform:uppercase;letter-spacing:.18em;font-size:.65rem;color:#fff9;transform:rotate(-90deg);transform-origin:right bottom}
-@media(max-width:900px){.home-intro{padding-bottom:6rem}.intro-photo-composition{grid-template-rows:50px 210px 170px 90px;gap:.75rem;margin-top:4rem}.intro-photo-main{grid-column:1/10;grid-row:1/4;border-radius:0 48px 0 0}.intro-photo-tall{grid-column:8/13;grid-row:2/5;border-radius:60px 60px 0 0;z-index:2;border:7px solid var(--cream)}.intro-photo-small{grid-column:2/7;grid-row:4/5;border-width:7px}.intro-photo-composition>p{display:none}.photo-statement{width:100%;height:700px;border-radius:48px 0 48px 0}.impact-frame{width:100%;border-radius:48px;padding:3.5rem 1.25rem}.impact-heading{grid-template-columns:1fr;align-items:start}.stats-grid{margin-top:3rem}.stats-grid article{min-height:250px;padding:2rem;border-radius:999px 999px 20px 20px}.project-cards{display:flex;grid-template:none}.project-feature:first-child,.project-feature.feature-2,.project-feature.feature-3{grid-column:auto;grid-row:auto;margin:0;border:0;border-radius:48px 48px 0 0;min-width:84vw;height:460px}.campaign-visual{padding:0 0 70px 30px}.campaign-visual .video-wrap{border-radius:48px 0 0 0}.campaign-visual>img{width:42%;border-width:7px}.campaign-visual:after{display:none}}
+.campaign-section{padding:clamp(7rem,11vw,11rem) 0}.campaign-copy{position:relative;z-index:2}.campaign-visual{position:relative;padding:0 0 90px 70px}.campaign-visual .video-wrap{position:relative;z-index:2;border-radius:80px 0 0 0;overflow:hidden}.campaign-visual>img{position:absolute;left:0;bottom:0;width:38%;aspect-ratio:4/5;object-fit:cover;z-index:3;border:10px solid var(--green);border-left:0}
+@media(max-width:900px){.home-intro{padding-bottom:6rem}.intro-photo-composition{grid-template-rows:50px 210px 170px 90px;gap:.75rem;margin-top:4rem}.intro-photo-main{grid-column:1/10;grid-row:1/4;border-radius:0 48px 0 0}.intro-photo-tall{grid-column:8/13;grid-row:2/5;border-radius:60px 60px 0 0;z-index:2;border:7px solid var(--cream)}.intro-photo-small{grid-column:2/7;grid-row:4/5;border-width:7px}.intro-photo-composition>p{display:none}.photo-statement{width:100%;height:700px;border-radius:48px 0 48px 0}.impact-frame{width:100%;border-radius:48px;padding:3.5rem 1.25rem}.impact-heading{grid-template-columns:1fr;align-items:start}.stats-grid{margin-top:3rem}.stats-grid article{min-height:250px;padding:2rem;border-radius:999px 999px 20px 20px}.project-cards{display:flex;grid-template:none}.project-feature:first-child,.project-feature.feature-2,.project-feature.feature-3{grid-column:auto;grid-row:auto;margin:0;border:0;border-radius:48px 48px 0 0;min-width:84vw;height:460px}.campaign-visual{padding:0 0 70px 30px}.campaign-visual .video-wrap{border-radius:48px 0 0 0}.campaign-visual>img{width:42%;border-width:7px}}
 :focus-visible{outline:3px solid var(--yellow);outline-offset:4px}
 /* Sistema visual y accesible compartido por todas las páginas */
 .site-header{position:absolute;padding-top:18px}.nav-shell{height:68px;padding:0 12px 0 24px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(23,37,34,.92);box-shadow:0 8px 30px rgba(7,20,17,.12);backdrop-filter:blur(12px)}.desktop-nav a{min-height:44px;display:inline-flex;align-items:center;padding:0 .25rem}.header-donate{min-height:44px;padding:.65rem 1.35rem}.brand{min-height:44px;display:flex;align-items:center}.brand img{width:124px}.home-hero-shade,.page-hero-shade{background:linear-gradient(90deg,rgba(8,27,23,.88) 0%,rgba(8,27,23,.58) 48%,rgba(8,27,23,.3) 100%),linear-gradient(0deg,rgba(8,27,23,.62),transparent 65%)}
@@ -41,8 +41,8 @@ main>.section:not(.campaign-section):not(.impact-section){background:#fff}main>.
 html,body,body *,body *::before,body *::after{cursor:auto}a,button,[role="button"],input,textarea,select,label{cursor:pointer}
 /* Ajuste luminoso: los fondos oscuros quedan reservados para texto sobre fotos y footer */
 .site-header .nav-shell{background:rgba(255,250,252,.96);border-color:rgba(231,47,135,.16);color:#38343c;box-shadow:0 8px 28px rgba(70,55,64,.12)}.site-header .brand img{filter:brightness(0) saturate(100%) invert(32%) sepia(83%) saturate(2437%) hue-rotate(310deg) brightness(98%) contrast(88%)}.desktop-nav a:hover,.desktop-nav a[aria-current=page]{color:var(--pink-dark)}
-.impact-section{background:#fff}.impact-frame{background:#fceff5;color:var(--ink);border:1px solid #f1dce6}.impact-frame .eyebrow{color:var(--pink-dark)}.impact-heading .section-title>p:last-child{color:#625c65}.impact-heading .button{border-color:var(--pink-dark);color:var(--pink-dark)}.stats-grid article{background:#fff;border-color:#eadce3}.stats-grid article:nth-child(2){background:#faf6f8}.stats-grid article>span{color:#8d838b}.stats-grid strong{color:var(--pink-dark)}.stats-grid p{color:#4f4952}
-.campaign-section{background:#fbf4f7;color:var(--ink);border-top:1px solid #f0e3e9;border-bottom:1px solid #f0e3e9}.campaign-section .eyebrow.light{color:var(--pink-dark)}.campaign-section .split-feature h2{color:var(--ink)}.campaign-section .campaign-copy p{color:#5e5861}.campaign-section .button.white{background:var(--pink);color:#fff}.campaign-visual>img{border-color:#fbf4f7}.campaign-visual:after{color:#8a7f87}
+.impact-section{background:#fff}.impact-frame{background:#fceff5;color:var(--ink);border:1px solid #f1dce6}.impact-frame .eyebrow{color:var(--pink-dark)}.impact-heading .section-title>p:last-child{color:#625c65}.impact-heading .button{border-color:var(--pink-dark);color:var(--pink-dark)}.stats-grid article{background:#fff;border-color:#eadce3}.stats-grid article>span{color:#8d838b}.stats-grid strong{color:var(--pink-dark)}.stats-grid p{color:#4f4952}
+.campaign-section{background:#fbf4f7;color:var(--ink);border-top:1px solid #f0e3e9;border-bottom:1px solid #f0e3e9}.campaign-section .eyebrow.light{color:var(--pink-dark)}.campaign-section .split-feature h2{color:var(--ink)}.campaign-section .campaign-copy p{color:#5e5861}.campaign-section .button.white{background:var(--pink);color:#fff}.campaign-visual>img{border-color:#fbf4f7}
 .floating-whatsapp{background:#716b75}.map-preview{background:#fff}.donation-card.featured{border-top-color:#b0a8b1}
 /* Separación global entre navegación y contenido inicial */
 .site-header{position:relative;padding-top:18px;padding-bottom:18px;background:#fff}.home-hero{min-height:calc(100svh - 104px)}.page-hero{min-height:clamp(540px,calc(72svh - 104px),720px);background-position:center 46%}.page-hero-inner{padding-top:clamp(7rem,11vw,10rem)}
@@ -65,7 +65,8 @@ html,body,body *,body *::before,body *::after{cursor:auto}a,button,[role="button
 }
 
 /* Aire entre la fotografía destacada y el bloque de impacto. */
-.impact-section{padding-top:clamp(4.5rem,8vw,7.5rem)}
+.impact-section{padding-top:clamp(4.5rem,8vw,7.5rem);padding-bottom:clamp(1.5rem,2.5vw,2.5rem)}
+.projects-section{padding-top:clamp(3rem,5vw,4.5rem)}
 .stats-grid strong,.stat-number{white-space:nowrap}
 .stat-number{display:inline-block;font-variant-numeric:tabular-nums}
 
@@ -407,7 +408,6 @@ html,body,body *,body *::before,body *::after{cursor:auto}a,button,[role="button
 
 /* Campaña: el video queda solo, sin la fotografía que lo tapaba. */
 .campaign-visual{padding:0}
-.campaign-visual:after{right:-1.5rem;bottom:0}
 @media(max-width:900px){
   .campaign-visual{padding:0}
   .campaign-visual .video-wrap{border-radius:48px 0 0 0}
@@ -510,6 +510,295 @@ html,body,body *,body *::before,body *::after{cursor:auto}a,button,[role="button
 @media(max-width:359px){
   .footer-grid{grid-template-columns:1fr}
 }
+
+/* Portada de "Quiénes somos": atardecer con globos rosados que suben.
+   Cielo, nubes y globos hechos con CSS, sin video ni imágenes. */
+.page-hero-cielo{background:none}
+.cielo{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  background:linear-gradient(180deg,#8fb2d6 0%,#a9c6df 18%,#cbd9e5 38%,#eddbcd 58%,#fbe3c4 74%,#ffdcb0 88%,#ffd3a4 100%);
+}
+/* Sol bajo, a contraluz: lava el centro del cielo. */
+.cielo-sol{
+  position:absolute;
+  left:38%;
+  bottom:-22%;
+  width:min(78vw,1000px);
+  aspect-ratio:1.35;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:radial-gradient(closest-side,rgba(255,250,235,.95) 0%,rgba(255,240,210,.6) 38%,rgba(255,228,190,.22) 62%,rgba(255,224,186,0) 80%);
+}
+.cielo-nubes{position:absolute;inset:0}
+.nube{
+  position:absolute;
+  left:0;
+  width:200%;
+  animation-name:nube-cruza;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+}
+.nube::before,.nube::after{content:"";position:absolute;inset:0}
+/* base sombreada, apenas corrida hacia abajo */
+.nube::before{
+  background:
+    radial-gradient(closest-side,rgba(140,160,188,0.5),rgba(140,160,188,0)) 5.0% 66%/6.2% 92.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.5),rgba(140,160,188,0)) 55.0% 66%/6.2% 92.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.46),rgba(140,160,188,0)) 1.8% 73%/4.4% 68.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.46),rgba(140,160,188,0)) 51.8% 73%/4.4% 68.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.47),rgba(140,160,188,0)) 8.4% 71%/4.8% 72.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.47),rgba(140,160,188,0)) 58.4% 71%/4.8% 72.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.44),rgba(140,160,188,0)) 3.4% 51%/3.6% 54.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.44),rgba(140,160,188,0)) 53.4% 51%/3.6% 54.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 6.9% 49%/3.2% 48.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 56.9% 49%/3.2% 48.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.42),rgba(140,160,188,0)) 10.6% 77%/2.8% 42.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.42),rgba(140,160,188,0)) 60.6% 77%/2.8% 42.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.42),rgba(140,160,188,0)) -0.4% 79%/2.6% 40.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.42),rgba(140,160,188,0)) 49.6% 79%/2.6% 40.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.47),rgba(140,160,188,0)) 17.0% 66%/4.96% 73.6% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.47),rgba(140,160,188,0)) 67.0% 66%/4.96% 73.6% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.44),rgba(140,160,188,0)) 14.44% 73%/3.52% 54.4% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.44),rgba(140,160,188,0)) 64.44% 73%/3.52% 54.4% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.45),rgba(140,160,188,0)) 19.72% 71%/3.84% 57.6% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.45),rgba(140,160,188,0)) 69.72% 71%/3.84% 57.6% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 15.72% 51%/2.88% 43.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 65.72% 51%/2.88% 43.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.42),rgba(140,160,188,0)) 18.52% 49%/2.56% 38.4% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.42),rgba(140,160,188,0)) 68.52% 49%/2.56% 38.4% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.41),rgba(140,160,188,0)) 21.48% 77%/2.24% 33.6% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.41),rgba(140,160,188,0)) 71.48% 77%/2.24% 33.6% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.41),rgba(140,160,188,0)) 12.68% 79%/2.08% 32.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.41),rgba(140,160,188,0)) 62.68% 79%/2.08% 32.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.52),rgba(140,160,188,0)) 29.0% 66%/7.13% 105.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.52),rgba(140,160,188,0)) 79.0% 66%/7.13% 105.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.47),rgba(140,160,188,0)) 25.32% 73%/5.06% 78.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.47),rgba(140,160,188,0)) 75.32% 73%/5.06% 78.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.48),rgba(140,160,188,0)) 32.91% 71%/5.52% 82.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.48),rgba(140,160,188,0)) 82.91% 71%/5.52% 82.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.45),rgba(140,160,188,0)) 27.16% 51%/4.14% 62.1% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.45),rgba(140,160,188,0)) 77.16% 51%/4.14% 62.1% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.44),rgba(140,160,188,0)) 31.18% 49%/3.68% 55.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.44),rgba(140,160,188,0)) 81.19% 49%/3.68% 55.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 35.44% 77%/3.22% 48.3% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 85.44% 77%/3.22% 48.3% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 22.79% 79%/2.99% 46.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 72.79% 79%/2.99% 46.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.49),rgba(140,160,188,0)) 40.0% 66%/5.58% 82.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.49),rgba(140,160,188,0)) 90.0% 66%/5.58% 82.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.45),rgba(140,160,188,0)) 37.12% 73%/3.96% 61.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.45),rgba(140,160,188,0)) 87.12% 73%/3.96% 61.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.46),rgba(140,160,188,0)) 43.06% 71%/4.32% 64.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.46),rgba(140,160,188,0)) 93.06% 71%/4.32% 64.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 38.56% 51%/3.24% 48.6% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 88.56% 51%/3.24% 48.6% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 41.71% 49%/2.88% 43.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.43),rgba(140,160,188,0)) 91.71% 49%/2.88% 43.2% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.42),rgba(140,160,188,0)) 45.04% 77%/2.52% 37.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.42),rgba(140,160,188,0)) 95.04% 77%/2.52% 37.8% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.41),rgba(140,160,188,0)) 35.14% 79%/2.34% 36.0% no-repeat,
+    radial-gradient(closest-side,rgba(140,160,188,0.41),rgba(140,160,188,0)) 85.14% 79%/2.34% 36.0% no-repeat;
+}
+/* cuerpo iluminado a contraluz */
+.nube::after{
+  background:
+    radial-gradient(closest-side,rgba(255,252,244,0.95),rgba(255,252,244,0)) 5.0% 55%/6.2% 92.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.95),rgba(255,252,244,0)) 55.0% 55%/6.2% 92.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.87),rgba(255,252,244,0)) 1.8% 62%/4.4% 68.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.87),rgba(255,252,244,0)) 51.8% 62%/4.4% 68.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.89),rgba(255,252,244,0)) 8.4% 60%/4.8% 72.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.89),rgba(255,252,244,0)) 58.4% 60%/4.8% 72.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.84),rgba(255,252,244,0)) 3.4% 40%/3.6% 54.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.84),rgba(255,252,244,0)) 53.4% 40%/3.6% 54.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.82),rgba(255,252,244,0)) 6.9% 38%/3.2% 48.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.82),rgba(255,252,244,0)) 56.9% 38%/3.2% 48.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.8),rgba(255,252,244,0)) 10.6% 66%/2.8% 42.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.8),rgba(255,252,244,0)) 60.6% 66%/2.8% 42.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.8),rgba(255,252,244,0)) -0.4% 68%/2.6% 40.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.8),rgba(255,252,244,0)) 49.6% 68%/2.6% 40.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.9),rgba(255,252,244,0)) 17.0% 55%/4.96% 73.6% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.9),rgba(255,252,244,0)) 67.0% 55%/4.96% 73.6% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.84),rgba(255,252,244,0)) 14.44% 62%/3.52% 54.4% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.84),rgba(255,252,244,0)) 64.44% 62%/3.52% 54.4% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.85),rgba(255,252,244,0)) 19.72% 60%/3.84% 57.6% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.85),rgba(255,252,244,0)) 69.72% 60%/3.84% 57.6% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.81),rgba(255,252,244,0)) 15.72% 40%/2.88% 43.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.81),rgba(255,252,244,0)) 65.72% 40%/2.88% 43.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.79),rgba(255,252,244,0)) 18.52% 38%/2.56% 38.4% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.79),rgba(255,252,244,0)) 68.52% 38%/2.56% 38.4% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.78),rgba(255,252,244,0)) 21.48% 66%/2.24% 33.6% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.78),rgba(255,252,244,0)) 71.48% 66%/2.24% 33.6% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.77),rgba(255,252,244,0)) 12.68% 68%/2.08% 32.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.77),rgba(255,252,244,0)) 62.68% 68%/2.08% 32.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.99),rgba(255,252,244,0)) 29.0% 55%/7.13% 105.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.99),rgba(255,252,244,0)) 79.0% 55%/7.13% 105.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.9),rgba(255,252,244,0)) 25.32% 62%/5.06% 78.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.9),rgba(255,252,244,0)) 75.32% 62%/5.06% 78.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.92),rgba(255,252,244,0)) 32.91% 60%/5.52% 82.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.92),rgba(255,252,244,0)) 82.91% 60%/5.52% 82.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.86),rgba(255,252,244,0)) 27.16% 40%/4.14% 62.1% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.86),rgba(255,252,244,0)) 77.16% 40%/4.14% 62.1% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.84),rgba(255,252,244,0)) 31.18% 38%/3.68% 55.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.84),rgba(255,252,244,0)) 81.19% 38%/3.68% 55.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.82),rgba(255,252,244,0)) 35.44% 66%/3.22% 48.3% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.82),rgba(255,252,244,0)) 85.44% 66%/3.22% 48.3% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.81),rgba(255,252,244,0)) 22.79% 68%/2.99% 46.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.81),rgba(255,252,244,0)) 72.79% 68%/2.99% 46.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.92),rgba(255,252,244,0)) 40.0% 55%/5.58% 82.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.92),rgba(255,252,244,0)) 90.0% 55%/5.58% 82.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.85),rgba(255,252,244,0)) 37.12% 62%/3.96% 61.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.85),rgba(255,252,244,0)) 87.12% 62%/3.96% 61.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.87),rgba(255,252,244,0)) 43.06% 60%/4.32% 64.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.87),rgba(255,252,244,0)) 93.06% 60%/4.32% 64.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.82),rgba(255,252,244,0)) 38.56% 40%/3.24% 48.6% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.82),rgba(255,252,244,0)) 88.56% 40%/3.24% 48.6% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.81),rgba(255,252,244,0)) 41.71% 38%/2.88% 43.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.81),rgba(255,252,244,0)) 91.71% 38%/2.88% 43.2% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.79),rgba(255,252,244,0)) 45.04% 66%/2.52% 37.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.79),rgba(255,252,244,0)) 95.04% 66%/2.52% 37.8% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.78),rgba(255,252,244,0)) 35.14% 68%/2.34% 36.0% no-repeat,
+    radial-gradient(closest-side,rgba(255,252,244,0.78),rgba(255,252,244,0)) 85.14% 68%/2.34% 36.0% no-repeat;
+}
+@keyframes nube-cruza{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+.cielo-globos{position:absolute;inset:0}
+.globo{
+  position:absolute;
+  top:108%;
+  display:block;
+  animation-name:globo-sube;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+}
+.globo-vaiven{
+  display:block;
+  animation-name:globo-vaiven;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  will-change:transform;
+}
+.globo-cuerpo{
+  position:relative;
+  display:block;
+  width:100%;
+  aspect-ratio:.86;
+  border-radius:50% 50% 46% 46%/54% 54% 46% 46%;
+  background:
+    radial-gradient(circle at 30% 24%,rgba(255,255,255,.85),rgba(255,255,255,0) 46%),
+    radial-gradient(circle at 64% 68%,var(--tono),var(--tono-oscuro) 98%);
+  box-shadow:inset -9px -13px 20px rgba(120,20,70,.13);
+}
+.globo-cuerpo::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-4%;
+  width:10%;
+  aspect-ratio:1/.9;
+  transform:translateX(-50%);
+  background:var(--tono-oscuro);
+  clip-path:polygon(0 0,100% 0,50% 100%);
+}
+.globo-hilo{display:block;width:14%;margin:1% auto 0}
+@keyframes globo-sube{
+  from{top:108%}
+  to{top:-34%}
+}
+@keyframes globo-vaiven{
+  from{transform:translateX(calc(var(--vaiven) * -1)) rotate(-3deg)}
+  to{transform:translateX(var(--vaiven)) rotate(3deg)}
+}
+/* Velo sobre el lado del texto: se lee sin apagar el cielo. */
+.page-hero-cielo .page-hero-shade{
+  background:
+    linear-gradient(90deg,rgba(38,28,40,.9) 0%,rgba(38,28,40,.82) 26%,rgba(38,28,40,.52) 46%,rgba(38,28,40,.15) 66%,rgba(38,28,40,0) 82%),
+    linear-gradient(180deg,rgba(38,28,40,.42) 0,rgba(38,28,40,.1) 20%,transparent 40%);
+}
+@media(max-width:900px){
+  .cielo-sol{left:50%;bottom:-16%;width:130vw}
+  .globo{transform:scale(.72)}
+  .page-hero-cielo .page-hero-shade{
+    background:linear-gradient(180deg,rgba(38,28,40,.5) 0,rgba(38,28,40,.16) 24%,rgba(38,28,40,.5) 58%,rgba(38,28,40,.88) 100%);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .globo{animation:none;top:var(--reposo)}
+  .globo-vaiven,.nube{animation:none}
+}
+
+/* "Nuestros sueños": titular fijo a un lado y la lista al otro, en filas
+   parejas. Antes era un titular enorme sobre un bloque muy alto. */
+.suenos-grid{
+  display:grid;
+  grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
+  gap:clamp(2.5rem,6vw,5.5rem);
+  align-items:center;
+}
+.suenos-titulo::after{
+  content:"";
+  display:block;
+  width:clamp(64px,10vw,132px);
+  height:2px;
+  margin-top:clamp(1.5rem,3vw,2.25rem);
+  background:var(--pink);
+}
+.suenos-titulo .section-title h2{font-size:clamp(2rem,3.4vw,3.2rem);letter-spacing:-.035em}
+.suenos-titulo .section-title{max-width:none}
+.suenos-lista{
+  list-style:none;
+  margin:0;
+  padding:0;
+  counter-reset:sueno;
+}
+.suenos-lista li{
+  position:relative;
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  gap:clamp(1rem,2.2vw,2rem);
+  align-items:baseline;
+  padding:clamp(1.15rem,2.2vw,1.6rem) clamp(.75rem,1.5vw,1.25rem);
+  border-top:1px solid #ecdce5;
+  border-radius:6px;
+  transition:background .25s ease;
+}
+.suenos-lista li:first-child{border-top:0}
+.suenos-lista li:hover{background:#fdf3f8}
+.suenos-lista li::before{
+  counter-increment:sueno;
+  content:counter(sueno,decimal-leading-zero);
+  font-family:var(--font-serif),Georgia,serif;
+  font-size:clamp(1.5rem,2.3vw,2.1rem);
+  line-height:1;
+  color:var(--pink);
+}
+.suenos-lista p{
+  margin:0;
+  max-width:54ch;
+  font-size:clamp(1.02rem,1.35vw,1.14rem);
+  line-height:1.6;
+  color:#4a444f;
+}
+
+@media(max-width:900px){
+  .suenos-grid{grid-template-columns:minmax(0,1fr);gap:2.25rem}
+  .suenos-titulo::after{margin-top:1.5rem}
+  .suenos-lista li{padding-inline:0;gap:1rem}
+}
+
+/* Velo de las portadas internas: fuerte donde va el texto y transparente
+   hacia la derecha, para no apagar la fotografía. */
+.page-hero-shade{
+  background:
+    linear-gradient(180deg,rgba(37,32,40,.46) 0,rgba(37,32,40,.12) 26%,transparent 46%),
+    linear-gradient(90deg,rgba(37,34,41,.84) 0%,rgba(37,34,41,.72) 40%,rgba(37,34,41,.5) 66%,rgba(37,34,41,.16) 86%,rgba(37,34,41,0) 100%),
+    linear-gradient(0deg,rgba(37,34,41,.42),transparent 56%);
+}
+
 /* Pasarela automática de proyectos integrada sobre los estilos actuales. */
 .project-carousel{width:100%;overflow:hidden}.project-runway{position:relative;height:clamp(430px,53vw,650px);outline:none;isolation:isolate}.project-runway:focus-visible{outline:3px solid var(--pink);outline-offset:5px;border-radius:40px}.project-runway-card{position:absolute;top:50%;left:50%;width:min(65vw,820px);height:92%;overflow:hidden;border-radius:56px 56px 10px 56px;background:#f4e7ed;box-shadow:0 22px 60px rgba(93,55,73,.13);opacity:0;pointer-events:none;transform:translate(-50%,-50%) scale(.72);transition:transform 1.15s cubic-bezier(.65,0,.2,1),opacity .8s ease,filter 1.15s ease;will-change:transform,opacity}.project-runway-card button,.project-runway-card a{display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:pointer}.project-runway-card img{width:100%;height:100%;object-fit:cover;transition:transform 5.2s ease-in-out}.project-runway-card.is-center{z-index:4;opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}.project-runway-card.is-center img{transform:scale(1.035)}.project-runway-card.is-left,.project-runway-card.is-right{z-index:2;opacity:.72;pointer-events:auto;filter:saturate(.82)}.project-runway-card.is-left{transform:translate(-105%,-50%) scale(.72)}.project-runway-card.is-right{transform:translate(5%,-50%) scale(.72)}.project-runway-card.is-far-left{z-index:1;opacity:0;transform:translate(-145%,-50%) scale(.56)}.project-runway-card.is-far-right{z-index:1;opacity:0;transform:translate(45%,-50%) scale(.56)}.project-runway-card.is-hidden{opacity:0;transform:translate(-50%,-50%) scale(.5)}.project-card-shade{position:absolute;inset:auto 0 0;height:28%;background:linear-gradient(transparent,rgba(45,34,42,.18));pointer-events:none}.runway-arrow{position:absolute;z-index:6;top:50%;display:grid;place-items:center;width:46px;height:46px;border:1px solid rgba(255,255,255,.75);border-radius:50%;background:rgba(55,40,50,.2);color:#fff;font-size:1.25rem;backdrop-filter:blur(8px);opacity:.55;transform:translateY(-50%);transition:.25s}.runway-arrow:hover,.runway-arrow:focus-visible{opacity:1;background:var(--pink);transform:translateY(-50%) scale(1.05)}.runway-previous{left:clamp(.6rem,3vw,2rem)}.runway-next{right:clamp(.6rem,3vw,2rem)}.project-runway-info{text-align:center;min-height:150px;padding:1.5rem 1rem .5rem}.project-runway-info p{margin:0 0 .4rem;color:var(--pink-dark);font-size:.74rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase}.project-runway-info h2{font-size:clamp(2.5rem,5vw,4.8rem);text-wrap:balance}.project-runway-info a{display:inline-flex;align-items:center;gap:.65rem;margin-top:.8rem;color:var(--pink-dark);font-weight:700;text-decoration:none}.project-dots{display:flex;justify-content:center;gap:.55rem;margin-top:1rem}.project-dots button{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:#ddcbd3;transition:width .45s ease,background .3s ease}.project-dots button.is-active{width:34px;border-radius:99px;background:var(--pink)}
 @media(max-width:700px){.project-runway{height:500px}.project-runway-card{width:82vw;height:86%;border-radius:38px 38px 8px 38px}.project-runway-card.is-left{transform:translate(-116%,-50%) scale(.72)}.project-runway-card.is-right{transform:translate(16%,-50%) scale(.72)}.runway-arrow{display:none}.project-runway-info{min-height:140px;padding-top:.9rem}}
