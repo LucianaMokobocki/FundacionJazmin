@@ -10,6 +10,7 @@ const links = [
   ["/nuestrospilares", "Qué hacemos"],
   ["/proyectos", "Proyectos"],
   ["/noticias", "Noticias"],
+  ["/juegos", "Juegos"],
   ["/contacto", "Contacto"],
 ] as const;
 

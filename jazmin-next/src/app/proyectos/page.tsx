@@ -15,8 +15,7 @@ const projects = [
   { title: "Jardín Teeny Tiny", location: "Montevideo", href: "https://www.instagram.com/fundacionjazmin/?hl=es", image: "/projects/watercolor/jardin-teeny-tiny.png" },
   { title: "Plaza Juan A. Silva", location: "Montevideo", href: "https://www.instagram.com/fundacionjazmin/?hl=es", image: "/projects/watercolor/plaza-juan-a-silva.png" },
   { title: "Plaza Vázquez Ledesma", location: "Montevideo", href: "/vazquezledesma", image: "/projects/watercolor/plaza-vazquez-ledesma.png" },
-  { title: "Concierto a beneficio", location: "Hospital Pereira Rossell", href: "/conciertoabeneficio", image: images.contact },
-  { title: "Hamacas inclusivas", location: "Todo Uruguay", href: "/hamacasinclusivasentodouruguay", image: images.hamacas },
+  { title: "Hamacas inclusivas", location: "Todo Uruguay", href: "/hamacasinclusivasentodouruguay", image: "/projects/watercolor/hamacas-inclusivas.png" },
 ] as const;
 
 export default function Page() {
