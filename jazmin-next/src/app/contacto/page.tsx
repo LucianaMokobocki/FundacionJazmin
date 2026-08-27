@@ -1,2 +1,55 @@
-import type { Metadata } from "next";import { images,PageHero } from "@/components/PageParts";export const metadata:Metadata={title:"Contacto"};
-export default function Page(){return <main id="contenido"><PageHero eyebrow="Hablemos" title="Comunicate con nosotros." text="Juntos podemos cambiar el mundo jugando." image={images.aviones}/><section className="section"><div className="container content-grid"><div><p className="eyebrow">Contacto directo</p><h2>Estamos cerca.</h2></div><div className="contact-links"><a href="mailto:info@fundacionjazmin.org">info@fundacionjazmin.org</a><a href="tel:+59891624386">091 624 386</a><a href="https://api.whatsapp.com/send?phone=59899251414" target="_blank" rel="noreferrer">WhatsApp · 099 25 14 14 ↗</a><a href="https://www.instagram.com/fundacionjazmin/?hl=es" target="_blank" rel="noreferrer">Instagram · @fundacionjazmin ↗</a></div></div></section><section className="section intro-section"><div className="container"><p className="eyebrow">Redes sociales</p><div className="cards-grid"><a className="info-card" href="https://es-la.facebook.com/FundacionJazminUruguay/" target="_blank" rel="noreferrer"><h2>Facebook</h2><p>Fundación Jazmín Uruguay ↗</p></a><a className="info-card" href="https://www.youtube.com/channel/UCYTDFkHDzIZNL0rjBaVJdNw" target="_blank" rel="noreferrer"><h2>YouTube</h2><p>Videos de nuestros proyectos ↗</p></a><a className="info-card" href="https://twitter.com/fundacionjazmin" target="_blank" rel="noreferrer"><h2>X / Twitter</h2><p>@fundacionjazmin ↗</p></a></div></div></section></main>}
+import type { Metadata } from "next";
+import { images, PageHero } from "@/components/PageParts";
+import { siteConfig } from "@/config/site";
+
+export const metadata: Metadata = { title: "Contacto" };
+
+const contactCards = [
+  { number: "01", label: "Escribinos", title: "Correo", text: siteConfig.contact.email, href: `mailto:${siteConfig.contact.email}` },
+  { number: "02", label: "Llamanos", title: "Teléfono", text: siteConfig.contact.phoneLabel, href: siteConfig.contact.phoneHref },
+  { number: "03", label: "Conversemos", title: "WhatsApp", text: siteConfig.contact.whatsappLabel, href: siteConfig.contact.whatsappHref },
+  { number: "04", label: "Seguinos", title: "Instagram", text: "@fundacionjazmin", href: siteConfig.social.instagram },
+] as const;
+
+const socialCards = [
+  { title: "Facebook", text: "Fundación Jazmín Uruguay", href: siteConfig.social.facebook },
+  { title: "YouTube", text: "Historias y proyectos", href: siteConfig.social.youtube },
+  { title: "X / Twitter", text: "@fundacionjazmin", href: siteConfig.social.twitter },
+] as const;
+
+export default function ContactPage() {
+  return (
+    <main id="contenido" className="contact-page">
+      <PageHero eyebrow="Hablemos" title="Comunicate con nosotros." text="Ideas, consultas o ganas de colaborar: estamos del otro lado." image={images.contactoHero} />
+
+      <section className="section contact-main">
+        <div className="container">
+          <div className="contact-heading">
+            <div><p className="eyebrow">Contacto directo</p><h2>Estamos cerca.</h2></div>
+            <p>Elegí el canal que te resulte más cómodo. Nos encanta conocer personas y organizaciones que también quieren construir un mundo donde nadie quede afuera.</p>
+          </div>
+          <div className="contact-channel-grid">
+            {contactCards.map(({ number, label, title, text, href }) => (
+              <a className="contact-channel" key={title} href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined}>
+                <span>{number} · {label}</span>
+                <div><h3>{title}</h3><p>{text}</p></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section contact-social-section">
+        <div className="container contact-social-layout">
+          <div><p className="eyebrow light">Nuestra comunidad</p><h2>Sigamos conectados.</h2><p>Conocé nuestros proyectos, actividades y avances en las redes de Fundación Jazmín.</p></div>
+          <div className="contact-social-list">
+            {socialCards.map(({ title, text, href }) => (
+              <a key={title} href={href} target="_blank" rel="noreferrer"><span>{title}</span><small>{text}</small><b aria-hidden="true">↗</b></a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

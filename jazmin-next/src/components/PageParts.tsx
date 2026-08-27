@@ -24,6 +24,12 @@ export const images = {
   flores: "/flores-jazmin.jpg",
   molinetes: "/molinetes.jpg",
   burbujas: "/burbujas.jpg",
+  queHacemosHero: "/heroes/que-hacemos.jpg",
+  proyectosHero: "/heroes/proyectos.jpg",
+  noticiasHero: "/heroes/noticias.jpg",
+  juegosHero: "/heroes/juegos.jpg",
+  donarHero: "/heroes/donar.jpg",
+  contactoHero: "/heroes/contacto.jpg",
 };
 
 export function PageHero({ eyebrow, title, text, image = images.children }: { eyebrow: string; title: string; text?: string; image?: string }) {
